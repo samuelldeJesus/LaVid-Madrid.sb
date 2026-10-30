@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'Tjiwidej Heritage Script';
+    src: url('fonts/TjiwidejHeritageScript-Reg.eot');
+    src: url('fonts/TjiwidejHeritageScript-Reg.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TjiwidejHeritageScript-Reg.woff2') format('woff2'),
+        url('fonts/TjiwidejHeritageScript-Reg.woff') format('woff'),
+        url('fonts/TjiwidejHeritageScript-Reg.ttf') format('truetype'),
+        url('fonts/TjiwidejHeritageScript-Reg.svg#TjiwidejHeritageScript-Reg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tjiwidej Heritage Serif';
+    src: url('fonts/TjiwidejHeritageSerif-Regular.eot');
+    src: url('fonts/TjiwidejHeritageSerif-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/TjiwidejHeritageSerif-Regular.woff2') format('woff2'),
+        url('fonts/TjiwidejHeritageSerif-Regular.woff') format('woff'),
+        url('fonts/TjiwidejHeritageSerif-Regular.ttf') format('truetype'),
+        url('fonts/TjiwidejHeritageSerif-Regular.svg#TjiwidejHeritageSerif-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 
 /* =========================
    1. CONFIGURACIÓN GENERAL
@@ -5,6 +31,7 @@
 
 * {
     box-sizing: border-box;
+    
 }
 
 html {
@@ -74,6 +101,7 @@ span {
     flex: 1;
     display: flex;
     flex-direction: column;
+    padding: 12px;
 }
 
 .contenido main {
@@ -96,19 +124,30 @@ span {
 
 .logo img {
     display: block;
-    width: min(250px, 75%);
+    width: min(100px, 27%);
     height: auto;
     margin: 0 auto 12px;
 }
 
 .logo h1 {
-    font-size: clamp(1.5rem, 5vw, 2.4rem);
+    font-size: clamp(1.9rem, 6vw, 2.4rem);
     overflow-wrap: anywhere;
+    letter-spacing: 1.2;
+    margin: 0;
+    font-family: 'Tjiwidej Heritage Serif';
+
 }
 
 .logo p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin-bottom: 0;
+    font-style: italic;
+    color: #c0bfbf;
+    letter-spacing: 1.2;
+    margin: 0;
+    padding: 0;
+        font-family: 'Tjiwidej Heritage Serif';
+
 }
 
 /* =========================
@@ -119,7 +158,7 @@ span {
     width: 100%;
     min-width: 0;
     min-height: 70px;
-    padding: 12px;
+    padding: 7px;
 
     display: flex;
     flex-direction: row;
@@ -139,11 +178,11 @@ span {
 /* Icono circular de tamaño fijo */
 
 .icono {
-    flex: 0 0 46px;
-    width: 46px;
-    height: 46px;
-    min-width: 46px;
-    min-height: 46px;
+    flex: 0 0 36px;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
 
     border-radius: 50%;
 
@@ -157,12 +196,6 @@ span {
 .icos {
     color: white;
     font-size: 1.35rem;
-}
-
-.flecha {
-    flex-shrink: 0;
-    font-size: 1.25rem;
-    color: white;
 }
 
 /* Texto flexible dentro de la tarjeta */
@@ -234,7 +267,7 @@ span {
 
 .caja-footer {
     position: static;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 
     display: flex;
@@ -251,8 +284,9 @@ span {
 }
 
 .indestaque {
-    font-size: 0.9em;
+    font-size: 0.7em;
     opacity: 0.7;
+    letter-spacing: 0.8;
 }
 
 .caja-footer .h3 {
@@ -264,7 +298,7 @@ span {
    Menos de 400 px
 ========================= */
 
-@media (max-width: 399.98px) {
+@media (max-width: 299.98px) {
 
     body {
         padding: 8px;
@@ -294,7 +328,7 @@ span {
     }
 
     .logo img {
-        width: min(200px, 70%);
+        width: min(100px, 50%);
     }
 
     /* Ajustar tarjetas sin deformar los iconos */
@@ -357,6 +391,7 @@ span {
     justify-content: center;
 
     padding: 20px;
+
 }
 
 .modal-evento.activo {
@@ -415,6 +450,8 @@ span {
 .tarjeta-evento h2 {
     font-size: 24px;
     margin-bottom: 12px;
+    font-family: 'Tjiwidej Heritage Serif';
+
 }
 
 .tarjeta-evento p {
@@ -466,6 +503,8 @@ span {
 .servicio-item h3 {
     margin: 0 0 5px;
     font-size: 17px;
+    font-family: 'Tjiwidej Heritage Serif';
+
 }
 
 .servicio-item p {
